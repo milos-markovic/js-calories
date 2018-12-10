@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Count calories</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">Count calories</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button type="button" name="button" id="clear-all" class="btn btn-primary">Clear all</button>
+
+      </div>
+    </nav>
+
+    <div id="count-calories">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Caunt Calories:</h3>
+
+                <form action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="food">Food:</label>
+                        <input type="text" name="food" id="food" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Number of calories:</label>
+                        <input type="number" name="calories" id="calories" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons d-flex">
+                    <button id="count" class="btn btn-primary mr-auto" >Count Calories</button>
+                    <button id="update" class="btn btn-warning mr-2" >Update</button>
+                    <button id="delete" class="btn btn-danger">Delete</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="display-calories" class="mt-5">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h1 class="display-4 mb-4 text-center">Total calories: <span id="total"></span></h1>
+
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Calories</th>
+                  <th>Food</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
